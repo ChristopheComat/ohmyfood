@@ -1,0 +1,11 @@
+form {
+    background: #eaeaea;
+    height: 50px;
+    @include centre;
+}
+
+input {
+    border: none;
+    background: transparent;
+    padding-left: 2vw;
+}

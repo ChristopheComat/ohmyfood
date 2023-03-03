@@ -1,0 +1,50 @@
+.restaurants {
+    background: $light-grey;
+    padding-bottom: 64px;
+}
+
+.contenair {
+    margin: 2vw;
+    padding-top: 54px;
+}
+
+.new {
+    position: absolute;
+    margin: -200px 65vw;
+    color: $new;
+    border: 0 solid;
+    background: $color-tertiary;
+    padding: 3px 7px;
+}
+
+figure {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 251px;
+    border-radius: 25px;
+    margin-bottom: 18px;
+    background: $white;
+
+    &:hover {
+        box-shadow: 0px 4px 15px 0px #0000001a;
+    }
+
+    figcaption {
+        color: $black;
+        padding: 15px 16px;
+        height: 77px;
+        position: relative;
+
+        i {
+            position: absolute;
+            margin: -40px 80vw;
+        }
+    }
+
+    img {
+        border-radius: 25px 25px 0 0;
+        height: calc(251px - 77px);
+        object-fit: cover;
+    }
+}

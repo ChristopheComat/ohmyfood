@@ -1,0 +1,38 @@
+.fonction {
+    margin: 3vw;
+    margin-bottom: 68px;
+
+    ul {
+        counter-reset: my-counter;
+    }
+
+    li {
+        counter-increment: my-counter;
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        height: 72px;
+        border-radius: 20px;
+        background: $light-grey;
+        margin: 25px 3vw;
+        padding: 27.13px 37.47px;
+        box-shadow: 0px 4px 15px 0px #00000026;
+        position: relative;
+
+        &::before {
+            content: counter(my-counter);
+            background-color: $color-primary;
+            border-radius: 100%;
+            width: 24px;
+            height: 24px;
+            color: white;
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
