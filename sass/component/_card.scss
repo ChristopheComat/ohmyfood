@@ -14,7 +14,7 @@
     color: $new;
     border: 0 solid;
     background: $color-tertiary;
-    padding: 3px 7px;
+    padding: 0% 2vw;
 }
 
 figure {
@@ -46,5 +46,28 @@ figure {
         border-radius: 25px 25px 0 0;
         height: calc(251px - 77px);
         object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        gap: 2vw;
+    }
+    figcaption {
+        position: relative;
+
+        .new {
+            position: absolute;
+            margin: -215px 11vw;
+            padding: 0% 1vw;
+        }
+
+        .fa-heart {
+            position: absolute;
+            margin: -40px 18vw;
+        }
     }
 }

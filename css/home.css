@@ -85,6 +85,7 @@ p {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 14px 0 14px 0;
 }
 
@@ -104,6 +105,22 @@ footer h4 {
   padding-bottom: 16px;
 }
 
+@media only screen and (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 85%;
+  }
+  footer li {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 20%;
+  }
+}
 .fonction {
   margin: 3vw;
   margin-bottom: 68px;
@@ -132,12 +149,23 @@ footer h4 {
   height: 24px;
   color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translate(-50%, -50%);
-  align-items: center;
-  justify-content: center;
+}
+@media only screen and (min-width: 1024px) {
+  .fonction ul {
+    display: flex;
+    width: 100%;
+  }
+  .fonction li {
+    width: 100%;
+    margin: 25px 1vw;
+    padding: 27.13px 2vw;
+  }
 }
 
 .restaurants {
@@ -156,7 +184,7 @@ footer h4 {
   color: #008766;
   border: 0 solid;
   background: #99e2d0;
-  padding: 3px 7px;
+  padding: 0% 2vw;
 }
 
 figure {
@@ -187,6 +215,26 @@ figure img {
   object-fit: cover;
 }
 
+@media only screen and (min-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 2vw;
+  }
+  figcaption {
+    position: relative;
+  }
+  figcaption .new {
+    position: absolute;
+    margin: -215px 11vw;
+    padding: 0% 1vw;
+  }
+  figcaption .fa-heart {
+    position: absolute;
+    margin: -40px 18vw;
+  }
+}
 button {
   border: 0 solid;
   border-radius: 25px;
@@ -230,10 +278,20 @@ h2 {
   color: #7e7e7e;
   width: 35px;
 }
+@media only screen and (min-width: 769px) {
+  .grey {
+    width: 2.5vw;
+  }
+}
 
 .purple {
   color: #9356dc;
   width: 35px;
+}
+@media only screen and (min-width: 769px) {
+  .purple {
+    width: 2.5vw;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

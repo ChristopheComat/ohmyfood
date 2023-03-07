@@ -1,5 +1,4 @@
 header {
-    display: flex;
-    justify-content: center;
+    @include centre;
     padding: 14px 0 14px 0;
 }

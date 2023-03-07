@@ -1,9 +1,11 @@
 @import "base/normalizer";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"),
     "base/fonts";
+@import "utils/mixins";
 @import "layout/header";
 @import "utils/colors";
 @import "layout/footer";
+@import "utils/mixins";
 @import "component/fonction";
 @import "component/card";
 @import "utils/mixins";

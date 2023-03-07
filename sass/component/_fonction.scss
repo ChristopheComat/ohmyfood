@@ -26,13 +26,23 @@
             width: 24px;
             height: 24px;
             color: white;
-            display: flex;
+            @include centre;
             position: absolute;
             left: 0;
             top: 50%;
             transform: translate(-50%, -50%);
-            align-items: center;
-            justify-content: center;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        ul {
+            display: flex;
+            width: 100%;
+        }
+
+        li {
+            width: 100%;
+            margin: 25px 1vw;
+            padding: 27.13px 2vw;
         }
     }
 }
