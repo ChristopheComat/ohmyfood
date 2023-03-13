@@ -86,97 +86,60 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 0;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-  position: relative;
+  padding: 14px 0 14px 0;
 }
-header i {
-  position: absolute;
-  margin: -8px -20vw;
-  color: #000;
+
+.bloc {
+  background: #f6f6f6;
 }
-@media only screen and (min-width: 1024px) {
-  header i {
-    position: absolute;
-    margin: -8px -40vw;
-  }
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding-right: 20px;
+}
+
+h2::after {
+  content: "";
+  border-bottom: solid #99e2d0;
+  width: 40px;
+  height: 4px;
+  display: block;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.menu li {
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 15px;
+  padding: 12px 10px;
+  height: 75px;
+}
+
+.menu i,
+span {
+  display: flex;
+  justify-content: flex-end;
 }
 
 button {
+  display: block;
   border: 0 solid;
   border-radius: 25px;
   padding: 13px 18.75px;
   color: #fff;
   background: linear-gradient(to top, #9356dc, #ff79da);
-  margin: 27px auto;
-  display: block;
-}
-
-@media only screen and (min-width: 1024px) {
-  img {
-    height: 50vh;
-    object-fit: cover;
-  }
-}
-@media only screen and (min-width: 600px) {
-  img {
-    height: 30vh;
-    object-fit: cover;
-  }
-}
-
-.bloc {
-  position: relative;
-  margin-top: -40px;
-  padding-bottom: 40px;
-  border-radius: 30px 30px 0 0;
-  background-color: #f6f6f6;
-}
-@media only screen and (min-width: 1024px) {
-  .bloc {
-    position: relative;
-    margin: -40px auto 0 auto;
-    width: 73%;
-  }
-}
-.bloc .name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-}
-.bloc h1 {
-  padding-right: 20px;
-}
-.bloc h2::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 4px;
-  border-bottom: solid #99e2d0;
-}
-.bloc .menu {
-  margin: 42px 3vw;
-}
-.bloc .menu ul {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 30px;
-}
-.bloc .menu ul li {
-  height: 75px;
-  margin-top: 12px;
-  padding: 12px 10px;
-  background-color: #fff;
-  border: 1px solid #fff;
-  border-radius: 15px;
-}
-.bloc .menu ul li i {
-  display: none;
-}
-.bloc .menu .price {
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 57px;
+  margin-top: 27px;
 }
 
 footer {
@@ -212,4 +175,4 @@ footer h4 {
   }
 }
 
-/*# sourceMappingURL=restaurant.css.map */
+/*# sourceMappingURL=css.restaurant.css.map */

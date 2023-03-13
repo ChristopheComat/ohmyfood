@@ -1,12 +1,11 @@
-h2 {
-    padding-bottom: 20px;
-    margin-top: 39px;
-}
-
 .info {
     @include centre;
     flex-direction: column;
     text-align: center;
-    background: $light-grey;
-    padding: 0 2%;
+    background: $color-quaternary;
+    padding: 40px 2%;
+}
+
+.info h2 {
+    padding-bottom: 20px;
 }

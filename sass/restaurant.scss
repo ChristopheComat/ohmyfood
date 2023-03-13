@@ -4,37 +4,7 @@
 @import "utils/mixins";
 @import "layout/header";
 @import "utils/colors";
-
-.bloc {
-    background: $light-grey;
-}
-
-.name {
-    @include centre;
-}
-
-h2 {
-    border-bottom: solid #99e2d0;
-    width: 40px;
-    margin: 12px 3vw;
-}
-
-.menu li {
-    border: 1px solid $white;
-    background: $white;
-    border-radius: 15px;
-    margin: 12px 3vw;
-    padding: 12px 10px;
-    position: relative;
-}
-
-span {
-    position: absolute;
-    margin: -24px 305px;
-}
-
-button {
-    @include btn;
-}
-
+@import "component/buttons";
+@import "component/pictures";
+@import "layout/bloc-menu";
 @import "layout/footer";
