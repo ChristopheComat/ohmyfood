@@ -86,8 +86,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 0;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  height: 63px;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
 header i {
@@ -102,14 +102,19 @@ header i {
   }
 }
 
-button {
+.btn {
   border: 0 solid;
   border-radius: 25px;
   padding: 13px 18.75px;
   color: #fff;
   background: linear-gradient(to top, #9356dc, #ff79da);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.15);
   margin: 27px auto;
   display: block;
+}
+.btn:hover {
+  background: linear-gradient(to top, #a16be0, #ff93e1);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -158,6 +163,11 @@ button {
 .bloc .menu {
   margin: 42px 3vw;
 }
+@media only screen and (min-width: 1024px) {
+  .bloc .menu {
+    margin: 42px 10vw;
+  }
+}
 .bloc .menu ul {
   display: flex;
   flex-direction: column;
@@ -170,6 +180,7 @@ button {
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .bloc .menu ul li i {
   display: none;
@@ -177,6 +188,9 @@ button {
 .bloc .menu .price {
   display: flex;
   justify-content: space-between;
+}
+.bloc .menu span {
+  font-weight: bold;
 }
 
 footer {

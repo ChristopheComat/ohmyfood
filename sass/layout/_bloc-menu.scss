@@ -28,6 +28,9 @@
 
     .menu {
         margin: 42px 3vw;
+        @media only screen and (min-width: 1024px) {
+            margin: 42px 10vw;
+        }
 
         ul {
             display: flex;
@@ -41,7 +44,7 @@
                 background-color: $white;
                 border: 1px solid $white;
                 border-radius: 15px;
-
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                 i {
                     display: none;
                 }
@@ -51,6 +54,9 @@
         .price {
             display: flex;
             justify-content: space-between;
+        }
+        span {
+            font-weight: bold;
         }
     }
 }

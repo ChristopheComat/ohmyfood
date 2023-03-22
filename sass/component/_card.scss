@@ -38,7 +38,7 @@ figure {
 
         i {
             position: absolute;
-            margin: -40px 80vw;
+            margin: -44px 77vw;
         }
     }
 
@@ -66,9 +66,9 @@ figure {
             padding: 0% 1vw;
         }
 
-        .fa-heart {
+        .heart-pos {
             position: absolute;
-            margin: -34px 40vw;
+            margin: -44px 37vw;
         }
     }
 }
@@ -89,9 +89,21 @@ figure {
             padding: 0% 1vw;
         }
 
-        .fa-heart {
+        .heart-pos {
             position: absolute;
-            margin: -40px 18vw;
+            margin: -44px 17vw;
         }
+    }
+}
+
+.heart-gradient {
+    color: transparent;
+    background-image: $color-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    &:hover.fa-solid {
+        opacity: 1;
     }
 }
