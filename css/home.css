@@ -355,16 +355,26 @@ input {
   align-items: center;
   z-index: 1;
   animation: disappear 1s forwards;
-  animation-delay: 2.1s;
+  animation-delay: 2s;
   transform-origin: top;
 }
 
 .lettre {
   color: #9356dc;
-  font-size: 80px;
+  font-size: 40px;
   margin-bottom: 150px;
   animation: flash 1.2s linear infinite;
   font-family: "Shrikhand", cursive;
+}
+@media only screen and (min-width: 600px) {
+  .lettre {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .lettre {
+    font-size: 80px;
+  }
 }
 
 @keyframes flash {
