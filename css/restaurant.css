@@ -92,14 +92,9 @@ header {
 }
 header i {
   position: absolute;
-  margin: -8px -20vw;
+  top: 21px;
+  left: 24px;
   color: #000;
-}
-@media only screen and (min-width: 1024px) {
-  header i {
-    position: absolute;
-    margin: -8px -40vw;
-  }
 }
 
 .btn {
@@ -111,6 +106,7 @@ header i {
   box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.15);
   margin: 27px auto;
   display: block;
+  cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(to top, #a16be0, #ff93e1);
@@ -135,7 +131,7 @@ img {
   border-radius: 30px 30px 0 0;
   background-color: #f6f6f6;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
   .bloc {
     position: relative;
     margin: -40px auto 0 auto;
@@ -156,6 +152,7 @@ img {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 .bloc .heart-gradient:hover.fa-solid {
   opacity: 1;
@@ -194,12 +191,13 @@ img {
   overflow: hidden;
   position: relative;
   border: none;
+  cursor: pointer;
 }
 .bloc .menu ul li:hover .menu-text {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  max-width: 70%;
+  max-width: 65%;
 }
 .bloc .menu ul li:hover span {
   transform: translateX(-60px);
@@ -233,28 +231,21 @@ img {
   font-weight: bold;
   position: absolute;
   top: 40px;
-  right: 15px;
-  transition: transform 0.3s ease-in-out;
-}
-.bloc .menu ul li:hover i {
-  transform: rotate(360deg);
+  right: 8px;
   transition: transform 0.3s ease-in-out;
 }
 .bloc .menu ul li .menu-text {
-  max-width: 80%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 .bloc .menu ul li h3,
 .bloc .menu ul li p {
-  max-width: 80%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/***Animation Menu***/
 .step-1,
 .step-2,
 .step-3,

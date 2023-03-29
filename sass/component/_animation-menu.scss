@@ -1,0 +1,35 @@
+.step-1,
+.step-2,
+.step-3,
+.step-4 {
+    animation: presentation 300ms linear forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.step-1 {
+    animation-delay: 0ms;
+}
+
+.step-2 {
+    animation-delay: 300ms;
+}
+
+.step-3 {
+    animation-delay: 600ms;
+}
+
+.step-4 {
+    animation-delay: 900ms;
+}
+
+@keyframes presentation {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
