@@ -293,7 +293,7 @@ figure img {
   opacity: 0;
   transition: all 1s ease-in-out;
 }
-.heart-gradient:hover.fa-solid {
+.heart-gradient:hover {
   opacity: 1;
 }
 
